@@ -14,6 +14,11 @@ class Player
 public:
 	Player(int position, int strength);
 	void pass(int position, Ball * ball);
+	int a;
+protected:
+
+private:
+	int b;
 
 };
 
