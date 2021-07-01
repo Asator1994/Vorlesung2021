@@ -19,6 +19,15 @@ Fortbewegungsmittel* buyFortbewegungsmittel()
 	}
 }
 
+int doSth()
+{
+	int a;
+	for (int i = 0; i < 100000; i++)
+	{
+		a = 6;
+	}
+}
+
 int main()
 {
 	//Ball* ball = new Ball();
@@ -28,6 +37,22 @@ int main()
 	for (int i = 0; i <= 10; i++)
 	{
 		Fortbewegungsmittel* mittel = buyFortbewegungsmittel();
+
+		delete mittel;
 		std::cout << mittel->move() << mittel->getName() << std::endl;;
+
+		delete mittel;
+		delete mittel;
+		mittel = nullptr;
+		delete mittel;
+		if (mittel)
+			if (mittel != nullptr)
+		mittel->getName();
 	}
+
+
+
+
+
+	doSth();
 }
